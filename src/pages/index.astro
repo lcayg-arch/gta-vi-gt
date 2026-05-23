@@ -1,0 +1,416 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import HeroKeyLogo from "@/assets/hero-key-logo.webp"
+import HeroKeyBackground from "@/assets/hero-key-background.webp"
+import LogoVI from "@/assets/logo-vi.svg"
+import PlayButtonIcon from "@/assets/play-button.svg"
+import LogoCutted from "@/assets/logo-cutted.svg"
+import FullLogo from "@/assets/full-logo.webp"
+import PlayStation from "@/assets/ps5.svg"
+import Xbox from "@/assets/xbox.svg"
+import IntroBackground from "@/assets/Untitled.jpeg"
+import Jason1 from "@/assets/Jason_Duval_02.c2f33c0d.jpg"
+import Jason2 from "@/assets/Jason_Duval_01.6e287338.jpg"
+import Jason3 from "@/assets/Jason_Duval_06.e498e308.jpg"
+import vipalmera from "@/assets/viplaya.jpeg"
+
+---
+<Layout>
+  <div id="logo-mask" class="fixed top-0 w-full h-screen">
+    <section>
+      <picture id="hero-key"
+        class="h-screen scale-125 block overflow-hidden fixed">
+        <img id="hero-key-logo"
+          src={HeroKeyLogo.src}
+          class="absolute w-full h-full object-cover"/>
+
+        <img id="hero-key-background"
+          src={HeroKeyBackground.src}
+          class="w-full h-full object-cover"/>
+
+      </picture>
+    </section>
+  </div>
+
+<div id="seccion2" class="flex fixed inset-0 opacity-0 flex-col 
+items-center justify-center 
+-translate-Y [8vh] bg-gray-950">
+  <img id="LogoColor"
+  src={FullLogo.src}
+  class="w-[30vh] h-auto " />
+  <div id="texto1" class="mt-4 text-center uppercase bg-linear-to-br
+   from-[#ce0473] via-[#f3b685] to-[#a849a8] 
+  bg-clip-text text-transparent
+  selective-text">
+  <p class="text-7xl font-bold">Disponible </p>
+  <p class="text-7xl font-bold">el 19 de noviembre </p>
+  <p class="text-7xl font-bold">de 2026 </p>
+  </div>
+
+  <div class="flex gap-6 mt-8 h-7 items-center justify-center">
+    <img  src={PlayStation.src} class="h-7 w-20 object-contain invert-brightness-0"/>
+    <img id="xboxlogo" src={Xbox.src} class="h-7 w-20 object-contain invert-brightness-0"/>
+  </div>
+</div>
+<div id="seccion3" class="flex fixed inset-0 opacity-0 flex-col 
+items-center justify-center -translate-Y [8vh] bg-gray-950">
+<div id="texto2" class="mt-4 self-start text-left uppercase bg-linear-to-br
+   from-[#ce0473] via-[#f3b685] to-[#a849a8] bg-clip-text text-transparent
+  selective-text ml-50">
+  <p class="text-5xl font-bold"> 
+    Vice City, EE. UU.
+  </p>
+</div>
+<div id="texto3" class="mt-4 text-left bg-linear-to-br
+   from-[#ce0473] via-[#f3b685] to-[#a849a8] 
+  bg-clip-text text-transparent
+  selective-text">
+  <p class="text-4xl font-extrabold"> 
+    Jason y Lucia siempre han sabido que las<br>
+    Cartas estaban en su contra, pero cuando un<br>
+    golpe que parecìa fàcil sale mal, se ven<br>
+    atrapados en el lado màs oscuro del lugar màs<br>
+    soleado de Amèrica, en medio de una<br>
+    conspiraciòn criminal que se extiende por<br>
+    todo el estado de Leonida, y obligados a<br>
+    depender màs que nunca el uno del otro si<br>
+    quieren salir con vida.
+  </p>
+</div>
+</div>
+
+
+<div id="seccion4" class="flex fixed inset-0 opacity-0"> 
+  <img id="Untitled"
+          src={IntroBackground.src}
+          class="sticky top-0 w-full h-screen object-cover scale-110"/>
+</div>
+
+<div id="seccion5" class="flex fixed inset-0 opacity-0 flex-col items-center 
+justify-center -translate-Y [8vh] bg-gray-950">
+<div id="texto51" class="mt-4 self-start text-left uppercase bg-linear-to-br
+   bg-white bg-clip-text text-transparent
+  selective-text ml-50">
+  <p class="text-5xl font-extrabold uppercase"> 
+    Jason Dubal
+  </p>
+   
+</div>
+<div id="texto52" class="mt-4 self-start text-left uppercase bg-linear-to-br
+   bg-pink-300 bg-clip-text text-transparent
+  selective-text ml-50">
+<p class="text-3xl font-bold"> 
+    Jason quiere<br>
+    una vida facil,<br>
+    pero las cosas<br>
+    no hacen mas que<br>
+    complicarse.
+  </p>
+</div>
+<div id="texto53" class="mt-4 text-left bg-linear-to-br bg-white
+  bg-clip-text text-transparent
+  selective-text ml-50 mr-160">
+  <p class="text-2xl font-extrabold"> 
+    Jason creció alrededor de estafadores y ladrones. 
+    Después de un período en el Ejército tratando de sacudirse a sus 
+    adolescentes en problemas, se encontró en los Cayos haciendo lo 
+    que mejor sabe, trabajando para los corredores locales de drogas. 
+    Podría ser el momento de probar algo nuevo.
+  </p>
+</div>
+</div>
+
+   <div
+  class="fixed flex flex-col items-center 
+  justify-between h-screen px-20 py-16 w-full"
+>
+
+  <header class="relative flex justify-between w-full">
+
+    <LogoVI
+      class="size-11 text-white hover:text-yellow-100 
+      transition-colors duration-500 cursor-pointer"
+    />
+
+    <button id="menu-button"
+      class="
+        absolute top-0 right-0 h-20 w-20 flex items-center 
+        justify-center cursor-pointer z-9999">
+      <span id="line1" class="absolute w-10 h-2 bg-white -translate-y-2 "></span>
+
+      <span id="line2" class="absolute w-10 h-2 bg-white translate-y-2"></span>
+
+    </button>
+
+  </header>
+
+  <!-- MENU -->
+
+  <div
+    id="fullscreen-menu"
+    class="
+      fixed
+      inset-0
+      bg-black
+      z-998
+      -translate-y-full
+      flex
+      items-center
+      justify-center">
+
+    <div class="flex w-full h-full">
+
+  <!-- LADO IZQUIERDO -->
+
+  <div
+    class="
+      w-1/2
+      h-full
+      overflow-hidden
+    "
+  >
+
+    <img
+      src={vipalmera.src}
+      class="
+        w-full
+        h-full
+        object-cover
+      "
+    />
+
+  </div>
+
+  <!-- LADO DERECHO -->
+
+  <div
+    class="w-1/2 h-full flex mt-10 justify-center font-extrabold">
+    <div
+      class="flex gap-12 text-left">
+
+      <a class="menu-link" href="#"> PERSONAJES</a>
+      <a class="menu-link" href="#"> LUGARES</a>
+      <a class="menu-link" href="#"> TRAILERES</a>
+      <a class="menu-link" href="#"> DESCARGAS</a>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+    <footer id="hero-footer" class="absolute bottom-8 m-auto">
+      <LogoCutted
+        class="text-white w-38 drop-shadow-[0_0_2px_rgba(255,255,255,.5),0_0_8px_#000]"/>
+      <span
+        class="absolute uppercase tracking-[6px] whitespace-nowrap text-center top-12.25
+    font-medium text-shadow-[0_0_2px_rgba(255,255,255,.5),0_0_8px_#000] left-1/2 
+    -translate-x-1/2 text-lg">
+        Ver el Trailer 2
+      </span>
+    </footer>
+  </div>
+</Layout>
+
+<style>
+  #logo-mask {
+    background: white;
+    mask-image: url("/src/assets/logo-stack.svg");
+    mask-position: center 23%;
+    mask-repeat: no-repeat;
+    mask-size: clamp(5000vh, 3500%, 0vh);
+  }
+  .imgboton {
+  .menu-link{
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.menu-link:hover{
+  color: #f472b6;
+}
+  }
+</style>
+
+<script>
+  import { gsap } from "gsap"
+  import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+  gsap.registerPlugin(ScrollTrigger)
+
+  const tl = gsap.timeline({
+    ease: "power2.out",
+    scrollTrigger: {
+      scrub: 1,
+    },
+  })
+
+  tl.to("#hero-key", { duration: 0.3, scale: 1 })
+    .to("#hero-key-logo", { opacity: 0 }, "<")
+    .to("#hero-footer", { opacity: 0 }, "<")
+    .to("#hero-play-button", { opacity: 0 }, "<")
+    .to(
+      "#logo-mask",
+      {
+        maskSize: "clamp(20vh, 25%, 30vh)",
+      },
+      0.20
+    )
+    .to(
+      "#hero-key",
+      {
+        opacity: 0,
+        duration: 0.2,
+      },
+      0.4
+    )
+    .to(
+      "#full-logo",
+      {
+        opacity: 0,
+        duration: 0.2,
+      },
+      0.15
+    )
+
+    .to("#seccion2", {
+      opacity: 1,
+      startAt: {
+        clipPath: "circle(0% at 50% 100%)", 
+        webkitClipPath:"circle(0% at 50% 100%)",
+      },
+      clipPath: "circle(150% at 50% 100%)",
+       webkitClipPath:"circle(150% at 50% 100%)",
+       duration: 2, 
+       ease: "power2.inOut"
+    },"0.4")
+    .from("#LogoColor", {
+      scale: 0.9, 
+      opacity: 0,
+      duration: 1,
+    })
+.to("#seccion3", {
+  opacity: 1,
+  startAt: {
+    clipPath: "circle(0% at 50% 100%)",
+    webkitClipPath: "circle(0% at 50% 100%)",
+     filter: "blur(40px)",
+  duration: 1.2,
+
+  ease: "power2.out"
+  },
+  clipPath: "circle(150% at 50% 100%)",
+  webkitClipPath: "circle(150% at 50% 100%)",
+  filter: "blur(0px)",
+  duration: 2.5,
+  ease: "power2.inOut",  
+}, "+=2")
+.to("#seccion4", {
+  opacity: 1,
+  startAt: {
+    clipPath: "(0% at 50% 100%)",
+    webkitClipPath: "(0% at 50% 100%)",
+    filter: "blur(40px)",
+  },
+  clipPath: "(150% at 50% 100%)",
+  webkitClipPath: "(150% at 50% 100%)",
+  filter: "blur(0px)",
+  duration: 2.5,
+  ease: "power2.inOut",  
+}, "+=2")
+.to("#seccion5", {
+  opacity: 1,
+  startAt: {
+    scale:1,
+  duration: 1.2,
+
+  ease: "power2.out"
+  },
+  duration: 4,
+  ease: "power2.inOut",  
+}, "+=2")
+
+// MENU GTA VI
+
+const menuButton = document.getElementById("menu-button") as HTMLButtonElement
+
+const menu = document.getElementById("fullscreen-menu")
+
+const line1 = document.getElementById("line1")
+
+const line2 = document.getElementById("line2")
+
+let menuOpen = false
+
+menuButton.addEventListener("click", () => {
+
+  if(!menuOpen){
+
+    // abrir menu
+
+    gsap.to(menu, {
+      y: 0,
+      duration: 1,
+      ease: "expo.inOut"
+    })
+
+    // icono X
+
+    gsap.to(line1, {
+      rotate: 45,
+      y: 0,
+      duration: 0.5
+    })
+
+    gsap.to(line2, {
+      rotate: -45,
+      y: 0,
+      duration: 0.5
+    })
+
+    // LINKS
+
+    gsap.from(".menu-link", {
+      opacity: 0,
+      y: 100,
+      stagger: 0.1,
+      duration: 1,
+      delay: 0.2
+    })
+
+    menuOpen = true
+
+  } else {
+
+    // cerrar menu
+
+    gsap.to(menu, {
+      y: "-100%",
+      duration: 1,
+      ease: "expo.inOut"
+    })
+
+    // RESET ICON
+
+    gsap.to(line1, {
+      rotate: 0,
+      y: -8,
+      duration: 0.5
+    })
+
+    gsap.to(line2, {
+      rotate: 0,
+      y: 8,
+      duration: 0.5
+    })
+
+    menuOpen = false
+
+  }
+
+})
+
+</script>
